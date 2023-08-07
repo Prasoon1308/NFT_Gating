@@ -12,6 +12,8 @@
 
 _Usage of Quicknode (QuickAllerts):_ if an NFT is transferred from the account, immediately a webhook is send back to the server which emits an event at the client instance to check whether the requirement of minimum number of NFTs required is matched or not. If the requirement is failed, the client instance is destroyed and automatically an error is emmitted.  
 
+_Cors:_ security feature implemented by web browsers to prevent web pages from making requests to a different domain than the one that served the web page.
+
 ## The making of the project
     1. Making of an NFT contract
     2. Creating server for deploying the contract instance
