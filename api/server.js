@@ -1,6 +1,7 @@
 const express = require("express");
 const { Web3 } = require("web3");
 const ABI = require("./ABI.json");
+const cors = require("cors");
 require('dotenv').config();
 
 const contractAddress = process.env.CONTRACT_ADDRESS
@@ -9,6 +10,8 @@ const account1 = process.env.ACCOUNT1
 const account2 = process.env.ACCOUNT2
 
 const app = express();
+app.use(cors());
+app.use(express.json);
 const web3 = new Web3(quicknodeUrl);
 
 const contract = new web3.eth.Contract(ABI, contractAddress);
