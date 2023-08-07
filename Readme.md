@@ -11,3 +11,8 @@
 
 
 _Usage of Quicknode (QuickAllerts):_ if an NFT is transferred from the account, immediately a webhook is send back to the server which emits an event at the client instance to check whether the requirement of minimum number of NFTs required is matched or not. If the requirement is failed, the client instance is destroyed and automatically an error is emmitted.  
+
+## The making of the project
+    1. Making of an NFT contract
+    2. Creating server for deploying the contract instance
+    3. Creating React components using vite tooling such as home, members and wallet page.
