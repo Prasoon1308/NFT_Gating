@@ -18,3 +18,5 @@ _Cors:_ security feature implemented by web browsers to prevent web pages from m
     1. Making of an NFT contract
     2. Creating server for deploying the contract instance
     3. Creating React components using vite tooling such as home, members and wallet page.
+    4. Create Webhooks (to resolve the issue of after transfer of an NFT to other accounts, access should also be transferred and the ex seller should be rechecked for the eligibility again after the transfer). Also used ngrok
+        -> destination.js : to know the place where quicknode request is to be sent. 
