@@ -16,3 +16,5 @@ const data = {
 axios.post('https://api.quicknode.com/quickalerts/rest/v1/destinations', data, {headers})
 .then(response => console.log("Response Data", response.data))
 .catch(error=> console.log('error', error));
+
+// on running `node destination.js`; id will be available in the response data, fetch it and use it in the notification.js destination array
