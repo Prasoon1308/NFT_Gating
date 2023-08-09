@@ -15,3 +15,10 @@ const data = {
 axios.post('https://api.quicknode.com/quickalerts/rest/v1/notifications', data, {headers})
 .then(response => console.log(response.data))
 .catch(error => console.log('error:', error));
+
+// account to be monitored(without 0x) + contract address + transfer function from nft contract (transfer event catched on transaction)
+// convert this to base64 encode and place it in the `expression` 
+
+// (tx_logs_topic1 =~ '') &&
+// (tx_logs_address == '') &&
+// (tx_logs_topic0 == '') 
