@@ -7,7 +7,7 @@ const headers = {
 
 const data = {
     name: 'My destination',
-    to_url: '', // link from running ngrok
+    to_url: '', // link from running ngrok - each time ngrok is started, different url will be there
     webhook_type: 'POST',
     service: 'webhook',
     payload_type: 5
