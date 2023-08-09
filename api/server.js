@@ -2,6 +2,7 @@ const express = require("express");
 const { Web3 } = require("web3");
 const ABI = require("./ABI.json");
 const cors = require("cors");
+const socketIO = require("socket.io");
 require("dotenv").config();
 
 const contractAddress = process.env.CONTRACT_ADDRESS;
@@ -45,10 +46,22 @@ app.post("/members", async (req, res) => {
 });
 
 app.post("/webhook", async(req, res)=>{
-  
+  try {
+    const account = req.body[0].from;
+    const numNFTs = await fetchNFTs(account);
+    io.emit('nftsUpdated', {userNFTs:numNFTs.userNFTs})
+    res.status(200).json({status:200, message: "Webhook Triggered"});
+    console.log(account);
+  } catch (error) {
+    console.log("error:", error);
+  }
 })
 
 const PORT = 3000;
 const server = app.listen(PORT, () => {
   console.log(`Sever running at ${PORT}`);
 });
+const io = socketIO(server);
+io.on('connection', ()=>{
+  console.log("Connected")
+})
