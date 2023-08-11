@@ -1,5 +1,5 @@
 # NFT_Gating
-----using NFTs to control access to exclusive digital content or experiences. It's like using special digital keys (NFTs) to unlock specific digital items or areas. This creates uniqueness and value for NFT holders, but also raises concerns about fairness and environmental impact.
+----using NFTs to control access to exclusive digital content or experiences. It's like using special digital keys (NFTs) to unlock specific digital items or areas. This creates uniqueness and value for NFT holders.
 
 **Benefits of NFT Gating websites:**
 1. Scarcity and Exclusivity
